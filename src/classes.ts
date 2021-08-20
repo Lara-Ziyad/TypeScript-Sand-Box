@@ -1,3 +1,6 @@
+
+// implements UserInterface  in Classes
+
 interface UserInterface{
     name: string;
     email: string;
@@ -5,8 +8,6 @@ interface UserInterface{
     register()
     payInvoice( )
 }
-//////////////////////////////////////////
-// implements UserInterface 
 class User implements UserInterface {
     //if we add 
     // 1. privit before the proparties then i can use them only withen class user.
@@ -27,7 +28,8 @@ class User implements UserInterface {
 
     //methods in classes
    register (){
-    console.log(this.name + 'is new registered')
+       console.log(this.name + 'is new registered')
+       //OR console.log(`${this.name} is new registered`)
    }
     
     payInvoice() {
@@ -39,7 +41,6 @@ class User implements UserInterface {
 // let layla = new User('layala', 'layla@gmail.com', 13);
 // console.log(layla.email)
 // layla.register()
-
 
 
 //////////////////////////////////
@@ -62,3 +63,6 @@ class Member extends User {
 
 let simon: User = new Member(1, 'simon', 'simon@gmail.com', 39)
 simon.payInvoice()
+
+//////////////////////////////////////
+
