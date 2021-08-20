@@ -109,7 +109,7 @@ let customerId = cid as number
 
 
 
-// Generics
+// Generics use to build reussable components 
 function getArray<T>(items: T[]): T[] {
   return new Array().concat(items)
 }
