@@ -1,7 +1,8 @@
-var myString :   string;
+let myString :   string;
 myString = "Hello first ts";
 console.log(myString);
-
+ //OR
+let mystring: string = "Hello first ts";
 
 // let strArr: srting[];
 //OR
