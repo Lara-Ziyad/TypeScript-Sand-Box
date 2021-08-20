@@ -1,5 +1,13 @@
-
-class User {
+interface UserInterface{
+    name: string;
+    email: string;
+    age: number;
+    register()
+    payInvoice( )
+}
+//////////////////////////////////////////
+// implements UserInterface 
+class User implements UserInterface {
     //if we add 
     // 1. privit before the proparties then i can use them only withen class user.
     // 2. public we can use the class any where
@@ -31,8 +39,6 @@ class User {
 // let layla = new User('layala', 'layla@gmail.com', 13);
 // console.log(layla.email)
 // layla.register()
-
-
 
 
 
